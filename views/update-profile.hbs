@@ -1,0 +1,15 @@
+<!-- views/update-profile.hbs -->
+<h3>Update Profile</h3>
+<form action="/update-profile" method="POST">
+  <div class="form-group">
+    <label for="profileImage">Profile Image URL</label>
+    <input
+      type="text"
+      id="profileImage"
+      name="profileImage"
+      value="{{user.profileImage}}"
+      required
+    >
+  </div>
+  <button type="submit" class="btn">Update Profile</button>
+</form>

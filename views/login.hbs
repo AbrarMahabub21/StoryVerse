@@ -1,0 +1,20 @@
+<h3><i class="fas fa-book-reader"></i> StoryVerse</h3>
+
+<!-- Basic Authentication Login -->
+<form action="/login" method="POST">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit" class="btn">Log In</button>
+</form>
+
+<p>Don't have an account? <a href="/signup">Sign Up</a></p>
+<!-- Google OAuth Login -->
+<a href="/auth/google" class="btn red darken-1">
+  <i class="fab fa-google left"></i>Log In with Google
+</a>
